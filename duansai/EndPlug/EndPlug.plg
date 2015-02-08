@@ -1,0 +1,113 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: EndPlug - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/EndPlug.res" /d "NDEBUG" /d "_AFXDLL" "D:\long\3\duansai\EndPlug\EndPlug.rc"" 
+Creating temporary file "C:\Users\biao\AppData\Local\Temp\RSPA5A2.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/EndPlug.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\long\3\duansai\EndPlug\ADOConnect.cpp"
+"D:\long\3\duansai\EndPlug\Camera1.cpp"
+"D:\long\3\duansai\EndPlug\Camera2.cpp"
+"D:\long\3\duansai\EndPlug\Camera3.cpp"
+"D:\long\3\duansai\EndPlug\CameraGroupBox.cpp"
+"D:\long\3\duansai\EndPlug\CDIB.CPP"
+"D:\long\3\duansai\EndPlug\CmeraInterface.cpp"
+"D:\long\3\duansai\EndPlug\DealImageData.cpp"
+"D:\long\3\duansai\EndPlug\EndPlug.cpp"
+"D:\long\3\duansai\EndPlug\EndPlugDlg.cpp"
+"D:\long\3\duansai\EndPlug\FileOperation.cpp"
+"D:\long\3\duansai\EndPlug\HegeDlg.cpp"
+"D:\long\3\duansai\EndPlug\ManiGroupBox.cpp"
+"D:\long\3\duansai\EndPlug\ManiPular1.cpp"
+"D:\long\3\duansai\EndPlug\ManiPular2.cpp"
+"D:\long\3\duansai\EndPlug\NHegeDlg.cpp"
+"D:\long\3\duansai\EndPlug\StopWatch.cpp"
+"D:\long\3\duansai\EndPlug\StoreLaterImageInfor.cpp"
+"D:\long\3\duansai\EndPlug\TestBtn.cpp"
+"D:\long\3\duansai\EndPlug\TestDlg.cpp"
+"D:\long\3\duansai\EndPlug\ThreadPool.cpp"
+"D:\long\3\duansai\EndPlug\TransferImage.cpp"
+"D:\long\3\duansai\EndPlug\ViewEndPlug.cpp"
+]
+Creating command line "cl.exe @C:\Users\biao\AppData\Local\Temp\RSPA5A2.tmp" 
+Creating temporary file "C:\Users\biao\AppData\Local\Temp\RSPA5A3.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/EndPlug.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\long\3\duansai\EndPlug\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\biao\AppData\Local\Temp\RSPA5A3.tmp" 
+Creating temporary file "C:\Users\biao\AppData\Local\Temp\RSPA5A4.tmp" with contents
+[
+..\lib\MVGigE.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/EndPlug.pdb" /machine:I386 /out:"../Release/EndPlug.exe" 
+.\Release\ADOConnect.obj
+.\Release\Camera1.obj
+.\Release\Camera2.obj
+.\Release\Camera3.obj
+.\Release\CameraGroupBox.obj
+.\Release\CDIB.OBJ
+.\Release\CmeraInterface.obj
+.\Release\DealImageData.obj
+.\Release\EndPlug.obj
+.\Release\EndPlugDlg.obj
+.\Release\FileOperation.obj
+.\Release\HegeDlg.obj
+.\Release\ManiGroupBox.obj
+.\Release\ManiPular1.obj
+.\Release\ManiPular2.obj
+.\Release\NHegeDlg.obj
+.\Release\StdAfx.obj
+.\Release\StopWatch.obj
+.\Release\StoreLaterImageInfor.obj
+.\Release\TestBtn.obj
+.\Release\TestDlg.obj
+.\Release\ThreadPool.obj
+.\Release\TransferImage.obj
+.\Release\ViewEndPlug.obj
+.\Release\EndPlug.res
+]
+Creating command line "link.exe @C:\Users\biao\AppData\Local\Temp\RSPA5A4.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ADOConnect.cpp
+Camera1.cpp
+Camera2.cpp
+Camera3.cpp
+CameraGroupBox.cpp
+CDIB.CPP
+CmeraInterface.cpp
+DealImageData.cpp
+EndPlug.cpp
+EndPlugDlg.cpp
+FileOperation.cpp
+HegeDlg.cpp
+ManiGroupBox.cpp
+ManiPular1.cpp
+ManiPular2.cpp
+NHegeDlg.cpp
+StopWatch.cpp
+StoreLaterImageInfor.cpp
+TestBtn.cpp
+TestDlg.cpp
+Generating Code...
+Compiling...
+ThreadPool.cpp
+TransferImage.cpp
+ViewEndPlug.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+EndPlug.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

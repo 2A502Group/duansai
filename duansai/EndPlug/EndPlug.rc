@@ -1,0 +1,388 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\EndPlug.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\EndPlug.ico"
+IDI_ENDPLUG             ICON    DISCARDABLE     "res\\logo_3.ico"
+IDI_ENDPLUG1            ICON    DISCARDABLE     "res\\logo_2.ico"
+IDI_LOGO                ICON    DISCARDABLE     "res\\logo_5.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 EndPlug"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "EndPlug 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2014",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_ENDPLUG_DIALOG DIALOGEX 0, 0, 751, 419
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "EndPlug"
+MENU IDR_MENU1
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "Start",IDC_START,"Button",BS_OWNERDRAW | WS_TABSTOP,4,
+                    97,116,36
+    GROUPBOX        "机械手状态",IDC_MANISTATE,101,155,103,64
+    LTEXT           "机械手1",IDC_STATIC,109,174,29,8
+    LTEXT           "机械手2",IDC_STATIC,151,174,29,8
+    GROUPBOX        "相机状态",IDC_CAMERASTATE,0,155,98,64
+    LTEXT           "",IDC_MANIPULAR1,109,187,16,14,0,WS_EX_STATICEDGE
+    LTEXT           "",IDC_MANIPULAR2,153,187,17,15,0,WS_EX_STATICEDGE
+    LTEXT           "相机1",IDC_STATIC,10,165,21,8
+    LTEXT           "相机2",IDC_STATIC,39,165,21,8
+    LTEXT           "相机3",IDC_STATIC,69,165,21,8
+    LTEXT           "",IDC_CAMERA2,39,187,15,13,0,WS_EX_STATICEDGE
+    LTEXT           "",IDC_CAMERA3,70,185,15,15,0,WS_EX_STATICEDGE
+    LTEXT           "",IDC_CAMERA1,12,185,15,15,0,WS_EX_STATICEDGE
+    SCROLLBAR       IDC_SCROLLBAR_H,516,235,40,11
+    SCROLLBAR       IDC_SCROLLBAR_V,575,219,10,40,SBS_VERT
+    GROUPBOX        "导轨位置校准",IDC_STATIC,0,219,291,188
+    GROUPBOX        "机械手位置校准",IDC_STATIC,292,219,299,188
+    CONTROL         "List2",IDC_LIST_LEADRAIL,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,0,231,289,99,WS_EX_TRANSPARENT
+    PUSHBUTTON      "向左",IDC_BTN_LEFT,33,359,50,14
+    PUSHBUTTON      "原位",IDC_BTN_O,109,360,50,14
+    PUSHBUTTON      "向右",IDC_BTN_RIGHT,177,360,50,14
+    PUSHBUTTON      "向前",IDC_BTN_FORWARD,109,336,50,14
+    PUSHBUTTON      "向后",IDC_BTN_BACK,109,385,50,14
+    CONTROL         "List7",IDC_LIST_MANIPULAR_CERRECT,"SysListView32",
+                    LVS_REPORT | WS_BORDER | WS_TABSTOP,295,231,294,100,
+                    WS_EX_TRANSPARENT | WS_EX_STATICEDGE
+    PUSHBUTTON      "机械手1放置",IDC_BTN_MANIPULAR1_DOWN,335,360,50,14
+    PUSHBUTTON      "原位",IDC_BTN_ORIGIN,411,359,50,14
+    PUSHBUTTON      "机械手2放置",IDC_BTN_MANIPULAR2_DOWN,487,359,50,14
+    PUSHBUTTON      "机械手1抓取",IDC_BTN_MANIPULAR1_UP,411,336,50,14
+    PUSHBUTTON      "机械手2抓取",IDC_BTN_MANIPULAR2_GET,411,385,50,14
+    GROUPBOX        "实时参数",IDC_STATIC,594,0,150,369
+    CONTROL         "List4",IDC_LISTIDC_LIST_MANIPULAR,"SysListView32",
+                    LVS_REPORT | WS_BORDER | WS_TABSTOP,595,11,149,94,
+                    WS_EX_TRANSPARENT
+    CONTROL         "List4",IDC_LIST_CAMERA,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,594,106,150,161,WS_EX_TRANSPARENT
+    CONTROL         "List4",IDC_LIST_MOTOR,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,595,271,149,135,WS_EX_TRANSPARENT
+    GROUPBOX        "图像显示",IDC_STATIC,259,0,333,220
+    LTEXT           "",IDC_VIEWWINDOW,259,9,332,213,0,WS_EX_STATICEDGE
+    GROUPBOX        "操作区",IDC_STATIC,0,0,259,137
+    PUSHBUTTON      "系统测试",IDC_BUTTON_TEST,5,14,52,27
+    PUSHBUTTON      "系统设置",IDC_BUTTON_SETTING,70,14,52,27
+    PUSHBUTTON      "退出系统",IDC_BUTTON_EXIT,131,97,116,35
+    PUSHBUTTON      "打印报表",IDC_BUTTON_PRINTREPORT,5,53,52,27
+    PUSHBUTTON      "算法测试",IDC_BUTTON_ALGORITHM,70,53,52,27
+    PUSHBUTTON      "系统校准",IDC_BUTTON_CORRECT,131,14,52,27
+    PUSHBUTTON      "成品率查询",IDC_BUTTON_GOODQUERY,131,53,52,27
+    PUSHBUTTON      "缺陷查询",IDC_BUTTON_DEFECTQUERY,196,14,52,27
+END
+
+IDD_HEGEDLG DIALOG DISCARDABLE  0, 0, 252, 141
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "合格"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,195,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,195,24,50,14
+END
+
+IDD_NHEGEDLG DIALOG DISCARDABLE  0, 0, 370, 158
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "不合格"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,313,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,313,24,50,14
+END
+
+IDD_TESTDLG DIALOG DISCARDABLE  0, 0, 710, 479
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "测试"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "打开",IDC_BUTTON_OPENDUANKOU,7,6,50,14
+    PUSHBUTTON      "关闭",IDC_BUTTON_CLOSEDUANKOU,68,6,50,14
+    PUSHBUTTON      "旋转",IDC_BUTTON_ROTA,135,6,50,14
+    EDITTEXT        IDC_EDIT_ROTA,229,6,40,14,ES_AUTOHSCROLL
+    LTEXT           "旋转角度",IDC_STATIC,193,7,33,8
+    EDITTEXT        IDC_EDIT_FPS,305,6,40,14,ES_AUTOHSCROLL
+    LTEXT           "帧率",IDC_STATIC,282,9,17,8
+    PUSHBUTTON      "连续触发",IDC_BUTTON_CONTINUE,366,6,50,14
+    EDITTEXT        IDC_EDIT_EXPOUSE,463,6,40,14,ES_AUTOHSCROLL
+    LTEXT           "曝光时间",IDC_STATIC,422,8,33,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "EndPlug Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "EndPlug\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2014\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "EndPlug.EXE\0"
+            VALUE "ProductName", "EndPlug 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_ENDPLUG_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 744
+        BOTTOMMARGIN, 413
+    END
+
+    IDD_HEGEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 245
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 134
+    END
+
+    IDD_NHEGEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 363
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_TESTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 703
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 472
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_MNIPULAR     BITMAP  DISCARDABLE     "res\\manipulator.bmp"
+IDB_GRAY                BITMAP  DISCARDABLE     "res\\gray.bmp"
+IDB_NORMAL              BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+IDB_WARNNING            BITMAP  DISCARDABLE     "res\\warning.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "文件"
+    BEGIN
+        MENUITEM "打开图像",                    ID_OPENPHOTO
+        MENUITEM "保存图像",                    ID_SAVEPHOTO
+        MENUITEM "保存设置",                    ID_SAVESETUP
+        MENUITEM "加载设置",                    ID_LOADSETUP
+        MENUITEM "打印",                        ID_PRINT
+        MENUITEM "打印设置",                    ID_PRINTSETUP
+        MENUITEM "打印预览",                    ID_PRINTPREVIEW
+        MENUITEM "退出",                        ID_EXIT
+    END
+    POPUP "用户管理"
+    BEGIN
+        MENUITEM "参数设置",                    ID_PARAMETERSETUP
+        MENUITEM "权限设置",                    ID_AUTHORITYSETUP
+    END
+    POPUP "系统校准"
+    BEGIN
+        MENUITEM "机械手校准",                  ID_ROBORTCALIBRATION
+        MENUITEM "相机校准",                    ID_CAMERACALIBOTATION
+    END
+    POPUP "算法测试"
+    BEGIN
+        MENUITEM "均值滤波",                    ID_Averagefiltering
+        MENUITEM "中值滤波",                    ID_Medianfiltering
+        MENUITEM "边缘检测",                    ID_Edgedetection
+        MENUITEM "阈值分割",                    ID_Thresholdsegmentation
+        MENUITEM "霍夫变换",                    ID_Houghtransform
+        MENUITEM "分类辨识",                    ID_Classificationidentification
+
+        MENUITEM "原始图像",                    ID_Originalimage
+    END
+    POPUP "在线检测"
+    BEGIN
+        MENUITEM "系统启动",                    ID_SystermStart
+        MENUITEM "系统关闭",                    ID_Systemclose
+    END
+    POPUP "成品率查询"
+    BEGIN
+        MENUITEM "合格",                        ID_Qualified
+        MENUITEM "不合格",                      ID_unqualified
+    END
+    POPUP "缺陷查询"
+    BEGIN
+        MENUITEM "按时间",                      ID_Bytime
+        MENUITEM "按类型",                      ID_ByClass
+    END
+    POPUP "帮助"
+    BEGIN
+        MENUITEM "关于",                        ID_About
+        MENUITEM "内容",                        ID_Content
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 EndPlug(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\EndPlug.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
